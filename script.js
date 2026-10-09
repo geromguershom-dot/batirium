@@ -94,3 +94,27 @@ quoteForm?.addEventListener('submit', (event) => {
   feedback.textContent = 'Merci. Votre demande a bien été enregistrée — nous revenons vers vous sous 48 heures.';
   quoteForm.reset();
 });
+
+
+// Transition douce entre les pages internes, sans intercepter les ancres ou liens externes.
+const pageWipe = document.createElement('div');
+pageWipe.className = 'page-wipe';
+pageWipe.setAttribute('aria-hidden', 'true');
+document.body.appendChild(pageWipe);
+
+requestAnimationFrame(() => document.body.classList.add('is-ready'));
+
+document.querySelectorAll('a[href]').forEach((link) => {
+  const href = link.getAttribute('href');
+  if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:') || link.target === '_blank' || link.hasAttribute('download')) return;
+  let destination;
+  try { destination = new URL(href, window.location.href); } catch { return; }
+  if (destination.origin !== window.location.origin) return;
+  link.addEventListener('click', (event) => {
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    if (destination.pathname === window.location.pathname && destination.search === window.location.search) return;
+    event.preventDefault();
+    document.body.classList.add('is-leaving');
+    window.setTimeout(() => { window.location.href = destination.href; }, 560);
+  });
+});
