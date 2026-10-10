@@ -11,3 +11,6 @@
 body:not(.is-ready) .page-wipe{transform:scaleY(1);transform-origin:top}
 body.is-leaving .page-wipe{transform:scaleY(1);transform-origin:bottom}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.page-wipe{display:none}}
+
+/* Couleurs de repli tant que les images ne sont pas chargées */
+.hero-image{background-color:#2a332d}.project-horizon,.case-image{background-color:#7d8a80}.project-atelier{background-color:#b8a48a}
