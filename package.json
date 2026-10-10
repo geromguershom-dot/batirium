@@ -1,0 +1,9 @@
+{
+  "name": "batirium",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site vitrine conceptuel pour Batirium (construction & architecture) + microsite Maison Nue",
+  "scripts": {
+    "dev": "npx serve ."
+  }
+}

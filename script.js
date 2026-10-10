@@ -91,7 +91,7 @@ const quoteForm = document.querySelector('[data-quote-form]');
 const feedback = document.querySelector('[data-form-feedback]');
 quoteForm?.addEventListener('submit', (event) => {
   event.preventDefault();
-  feedback.textContent = 'Merci. Votre demande a bien été enregistrée — nous revenons vers vous sous 48 heures.';
+  feedback.textContent = "Merci ! Ce site est une démonstration : votre message n'a pas été envoyé.";
   quoteForm.reset();
 });
 

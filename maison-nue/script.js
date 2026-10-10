@@ -11,7 +11,7 @@ const form = document.querySelector('.mn-form');
 const feedback = document.querySelector('.mn-feedback');
 form?.addEventListener('submit', (event) => {
   event.preventDefault();
-  feedback.textContent = 'Merci. Votre demande est bien reçue — nous revenons vers vous sous 24 heures.';
+  feedback.textContent = "Merci ! Ce site est une démonstration : votre demande n'a pas été envoyée.";
   form.reset();
 });
 
