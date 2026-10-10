@@ -1,6 +1,6 @@
 # Batirium
 
-Site vitrine **conceptuel** (projet de démonstration) pour une entreprise fictive de construction et d'architecture, avec un second microsite autonome : **Maison Nue**, studio de coiffure (`/maison-nue/`).
+Site vitrine **conceptuel** (projet de démonstration) pour une entreprise fictive de construction et d'architecture, avec un second microsite autonome : **Batirium Hair Studio**, studio de coiffure (`/maison-nue/`).
 
 - HTML / CSS / JavaScript natif, sans build
 - Multi-page : accueil, réalisations (3 études de cas), agence, contact

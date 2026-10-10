@@ -2,7 +2,7 @@
   "name": "batirium",
   "version": "1.0.0",
   "private": true,
-  "description": "Site vitrine conceptuel pour Batirium (construction & architecture) + microsite Maison Nue",
+  "description": "Site vitrine conceptuel pour Batirium (construction & architecture) + microsite Batirium Hair Studio",
   "scripts": {
     "dev": "npx serve ."
   }
